@@ -38,14 +38,14 @@ export default function Home() {
     <main>
       <header className="topbar"><a className="brand" href="#top"><span className="brandMark">+</span><span>基层急诊病历质控助手</span></a><span className="privacy">本地运行 · 不上传病历</span></header>
       <section className="hero" id="top">
-        <div><p className="eyebrow">ANAPHYLAXIS RECORD REVIEW · V0.1</p><h1>把抢救过程，<br /><em>完整地留在病历里。</em></h1><p className="lead">面向基层急诊的过敏反应与过敏性休克记录清单。用于快速发现遗漏，不替代临床判断、指南或上级医师意见。</p></div>
+        <div><p className="eyebrow">ANAPHYLAXIS RECORD REVIEW · V0.1.1</p><h1>把抢救过程，<br /><em>完整地留在病历里。</em></h1><p className="lead">面向基层急诊的过敏反应与过敏性休克记录清单。用于快速发现遗漏，不替代临床判断、指南或上级医师意见。</p></div>
         <aside className="statusCard"><div className="scoreRow"><strong>{score}</strong><span>%<br />完成度</span></div><div className="bar"><i style={{ width: `${score}%` }} /></div><div className="statusMeta"><span>{done}/{items.length} 已核对</span><span className={missingCritical.length ? "warn" : "ok"}>{missingCritical.length} 个关键项待补</span></div></aside>
       </section>
       <section className="workspace">
         <div className="checklist">{groups.map((group, index) => <section className="group" key={group}><div className="groupTitle"><span>0{index + 1}</span><h2>{group}</h2></div><div className="items">{items.filter((item) => item.group === group).map((item) => <label className={`item ${checked[item.id] ? "checked" : ""}`} key={item.id}><input type="checkbox" checked={!!checked[item.id]} onChange={(e) => setChecked({ ...checked, [item.id]: e.target.checked })} /><span className="box">✓</span><span className="itemText"><b>{item.label}{item.critical && <small>关键</small>}</b><span>{item.hint}</span></span></label>)}</div></section>)}</div>
         <aside className="summaryPanel"><p className="panelLabel">质控摘要</p><h2>{missingCritical.length ? "仍有关键记录待补充" : "关键记录已核对"}</h2><p>{missingCritical.length ? `优先检查下列 ${missingCritical.length} 项，再完善一般记录。` : "请结合原始病历再次确认内容真实、时间准确。"}</p><ul>{missingCritical.map((item) => <li key={item.id}>{item.label}</li>)}</ul>{!missingCritical.length && <div className="complete">✓ 关键项目完整</div>}<label className="notesLabel" htmlFor="notes">补充备注（请勿填写患者身份信息）</label><textarea id="notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="例如：等待上级医师复核转诊记录……" /><button className="primary" onClick={copySummary}>{copied ? "已复制" : "复制质控摘要"}</button><button className="secondary" onClick={() => { setChecked({}); setNotes(""); }}>清空并重新检查</button></aside>
       </section>
-      <footer><p>开源、隐私优先的基层病历记录辅助工具</p><p>仅检查记录完整性，不保存数据，不提供诊疗决策。</p></footer>
+      <footer><p>开源、隐私优先的基层病历记录辅助工具</p><p>仅检查记录完整性，不保存数据，不提供诊断、用药剂量或留观决策；临床内容仍需独立复核。</p><p><a href="https://github.com/cjjaijia-svg/primarycare-record-check/blob/main/REFERENCES.md" target="_blank" rel="noreferrer">查看指南依据与安全说明</a></p></footer>
     </main>
   );
 }

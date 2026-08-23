@@ -1,6 +1,6 @@
 {
   "name": "primarycare-record-check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -40,5 +40,5 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "\u57fa\u5c42\u6025\u8bca\u75c5\u5386\u8d28\u63a7\u52a9\u624b"
+  "displayName": "基层急诊病历质控助手"
 }
