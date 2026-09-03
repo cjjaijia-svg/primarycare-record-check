@@ -29,6 +29,8 @@ All 12 checklist items are mapped to authoritative guidance in [REFERENCES.md](R
 
 The evidence map separates explicit guideline recommendations from project-specific record-completeness prompts. International guidance must be adapted to local institutional policy. Independent clinical validation remains outstanding and is tracked in [Issue #2](https://github.com/cjjaijia-svg/primarycare-record-check/issues/2).
 
+Clinicians invited to review the prototype can use the bilingual [independent clinical review form](docs/CLINICAL_REVIEW_TEMPLATE.md). It prohibits patient-identifying information and separates reviewer feedback from maintainer decisions.
+
 ## Roadmap
 
 Current public maintenance work:
