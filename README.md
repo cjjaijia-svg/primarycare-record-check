@@ -1,6 +1,6 @@
 # PrimaryCare Record Check / 基层急诊病历质控助手
 
-A browser-based checklist that helps primary-care clinicians review emergency-documentation prompts. Version 0.2.0 focuses on allergic reactions and anaphylaxis and adds installable offline support.
+A browser-based checklist that helps primary-care clinicians review emergency-documentation prompts. Version 0.2.1 focuses on allergic reactions and anaphylaxis, with installable offline support and a mobile back-to-top control.
 
 ## Scope and safety
 
@@ -24,6 +24,7 @@ Live demo: https://primarycare-record-check.cjjaijia.chatgpt.site
 - Review-progress display and provisional priority prompts.
 - Copyable review summary without patient identifiers.
 - Installable PWA with an app shell cached for offline opening after the first complete online load.
+- Accessible back-to-top control on long mobile pages.
 - Responsive, keyboard-accessible interface.
 
 ## Offline use and privacy
@@ -55,7 +56,7 @@ Current public maintenance work:
 - [x] [#1 Add authoritative clinical references](https://github.com/cjjaijia-svg/primarycare-record-check/issues/1)
 - [ ] [#2 Track independent clinical review (deferred)](https://github.com/cjjaijia-svg/primarycare-record-check/issues/2)
 - [x] [#3 Add installable offline PWA support](https://github.com/cjjaijia-svg/primarycare-record-check/issues/3)
-- [ ] [#4 Create a privacy-safe pilot feedback process](https://github.com/cjjaijia-svg/primarycare-record-check/issues/4)
+- [x] [#4 Create a privacy-safe pilot feedback process](https://github.com/cjjaijia-svg/primarycare-record-check/issues/4)
 - [x] [#7 Address safety wording identified in maintainer self-review](https://github.com/cjjaijia-svg/primarycare-record-check/issues/7)
 
 ## Maintainer
