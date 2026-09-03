@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Recorded three anonymous, privacy-safe external usability responses and linked the mobile back-to-top request to Issue #11.
+
 ## 0.2.0 - 2026-09-03
 
 - Added an installable web-app manifest, application icon, and offline service worker.
