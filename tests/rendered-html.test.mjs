@@ -37,7 +37,7 @@ test("renders development preview metadata", async () => {
   assert.match(html, /系统剪贴板/);
   assert.match(html, /正在准备离线缓存/);
   assert.match(html, /manifest\.webmanifest/);
-  assert.match(html, /V0\.2\.0/);
+  assert.match(html, /V0\.2\.1/);
   assert.doesNotMatch(html, />完成度</);
   assert.doesNotMatch(html, /关键项目完整/);
   assert.doesNotMatch(html, /本地运行/);

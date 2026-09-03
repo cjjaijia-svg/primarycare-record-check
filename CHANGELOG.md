@@ -1,8 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.2.1 - 2026-09-03
 
 - Recorded three anonymous, privacy-safe external usability responses and linked the mobile back-to-top request to Issue #11.
+- Added an accessible mobile back-to-top control after the first external usability pilot.
+- Added reduced-motion behavior and focus restoration for keyboard and screen-reader users.
+- Added automated source checks for the control's visibility threshold and accessibility behavior.
 
 ## 0.2.0 - 2026-09-03
 
