@@ -1,4 +1,4 @@
-const CACHE_NAME = "primarycare-record-check-v0.2.0";
+const CACHE_NAME = "primarycare-record-check-v0.2.1";
 const APP_SHELL = [
   "/manifest.webmanifest",
   "/favicon.svg",
