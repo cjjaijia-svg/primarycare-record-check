@@ -12,7 +12,7 @@ test("PWA manifest describes an installable offline app", async () => {
 
 test("service worker caches only the app shell and static assets", async () => {
   const worker = await readFile(new URL("../public/sw.js", import.meta.url), "utf8");
-  assert.match(worker, /primarycare-record-check-v0\.2\.0/);
+  assert.match(worker, /primarycare-record-check-v0\.2\.1/);
   assert.match(worker, /request\.mode === "navigate"/);
   assert.match(worker, /html\.matchAll/);
   assert.match(worker, /url\.pathname\.startsWith\("\/api\/"\)/);
