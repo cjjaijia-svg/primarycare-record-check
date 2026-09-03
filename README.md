@@ -1,6 +1,6 @@
 # PrimaryCare Record Check / 基层急诊病历质控助手
 
-A browser-based checklist that helps primary-care clinicians review emergency-documentation prompts. Version 0.1.1 focuses on allergic reactions and anaphylaxis.
+A browser-based checklist that helps primary-care clinicians review emergency-documentation prompts. Version 0.2.0 focuses on allergic reactions and anaphylaxis and adds installable offline support.
 
 ## Scope and safety
 
@@ -10,7 +10,6 @@ A browser-based checklist that helps primary-care clinicians review emergency-do
 - Form input remains in current-page memory; application code does not send or persist it. Refresh or clear the page to remove the state.
 - Copying a summary places its contents on the operating-system clipboard.
 - Must not be used with patient-identifying information.
-- Offline use is not yet guaranteed and is tracked in [Issue #3](https://github.com/cjjaijia-svg/primarycare-record-check/issues/3).
 - Independent clinical review remains required before institutional use.
 
 ## Try it
@@ -24,7 +23,14 @@ Live demo: https://primarycare-record-check.cjjaijia.chatgpt.site
 - Four-stage review: assessment, diagnostic evidence, interventions, and reassessment/disposition.
 - Review-progress display and provisional priority prompts.
 - Copyable review summary without patient identifiers.
+- Installable PWA with an app shell cached for offline opening after the first complete online load.
 - Responsive, keyboard-accessible interface.
+
+## Offline use and privacy
+
+Open the live demo once while connected and wait for **“已准备离线使用”**. You can then use the browser's **Install app** or **Add to Home Screen** action where supported. The service worker caches the application shell and static assets only. Checklist selections and notes are not written to the offline cache, local storage, or a database.
+
+Offline readiness does not imply clinical validation. Test the installed app on the intended device and keep local emergency procedures available.
 
 ## Clinical references and review
 
@@ -43,10 +49,10 @@ The maintainer self-review is not independent validation, third-party verificati
 Current public maintenance work:
 
 - [x] [#1 Add authoritative clinical references](https://github.com/cjjaijia-svg/primarycare-record-check/issues/1)
-- [#2 Arrange independent clinical review](https://github.com/cjjaijia-svg/primarycare-record-check/issues/2)
-- [#3 Add installable offline PWA support](https://github.com/cjjaijia-svg/primarycare-record-check/issues/3)
-- [#4 Create a privacy-safe pilot feedback process](https://github.com/cjjaijia-svg/primarycare-record-check/issues/4)
-- [#7 Address safety wording identified in maintainer self-review](https://github.com/cjjaijia-svg/primarycare-record-check/issues/7)
+- [ ] [#2 Track independent clinical review (deferred)](https://github.com/cjjaijia-svg/primarycare-record-check/issues/2)
+- [x] [#3 Add installable offline PWA support](https://github.com/cjjaijia-svg/primarycare-record-check/issues/3)
+- [ ] [#4 Create a privacy-safe pilot feedback process](https://github.com/cjjaijia-svg/primarycare-record-check/issues/4)
+- [x] [#7 Address safety wording identified in maintainer self-review](https://github.com/cjjaijia-svg/primarycare-record-check/issues/7)
 
 ## Maintainer
 

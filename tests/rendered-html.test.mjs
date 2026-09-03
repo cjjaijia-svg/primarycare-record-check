@@ -35,6 +35,9 @@ test("renders development preview metadata", async () => {
   assert.match(html, /不得用于抢救中的实时决策/);
   assert.match(html, /优先核对·项目暂定/);
   assert.match(html, /系统剪贴板/);
+  assert.match(html, /正在准备离线缓存/);
+  assert.match(html, /manifest\.webmanifest/);
+  assert.match(html, /V0\.2\.0/);
   assert.doesNotMatch(html, />完成度</);
   assert.doesNotMatch(html, /关键项目完整/);
   assert.doesNotMatch(html, /本地运行/);

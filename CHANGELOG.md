@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 - 2026-09-03
+
+- Added an installable web-app manifest, application icon, and offline service worker.
+- Cached only the application shell and static assets; checklist selections and notes remain uncached and in page memory.
+- Added live online/offline readiness messaging and documented first-load requirements.
+- Added automated checks for the manifest, service-worker boundaries, and rendered offline wording.
 
 - Replaced clinical-sounding “completion” language with neutral review-progress wording.
 - Clarified that priority prompts are provisional project choices and do not establish clinical completeness.
