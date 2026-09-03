@@ -34,7 +34,7 @@ Offline readiness does not imply clinical validation. Test the installed app on 
 
 ## Pilot feedback
 
-The privacy-safe pilot process is ready, but no external responses have been counted yet. Review the [pilot guide](docs/PILOT_FEEDBACK_GUIDE.md), submit only blank or fictional-scenario feedback through the [public feedback form](https://github.com/cjjaijia-svg/primarycare-record-check/issues/new?template=pilot-feedback.yml), and follow aggregate progress in [PILOT_FINDINGS.md](docs/PILOT_FINDINGS.md).
+The first privacy-safe pilot round recorded three anonymous external healthcare-worker responses. Review the [pilot guide](docs/PILOT_FEEDBACK_GUIDE.md), submit future blank or fictional-scenario feedback through the [public feedback form](https://github.com/cjjaijia-svg/primarycare-record-check/issues/new?template=pilot-feedback.yml), and see the aggregate results and limitations in [PILOT_FINDINGS.md](docs/PILOT_FINDINGS.md).
 
 ## Clinical references and review
 
