@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Replaced clinical-sounding “completion” language with neutral review-progress wording.
+- Clarified that priority prompts are provisional project choices and do not establish clinical completeness.
+- Revised checklist wording identified in the confirmed maintainer self-review.
+- Added warnings against real-time emergency decision use and delays to care, transfer, or consultation.
+- Corrected online/offline and browser-memory statements, and documented clipboard privacy behavior.
+- Added rendered-output assertions for the new safety wording.
+
 ## 0.1.1 - 2026-08-23
 
 - Added an authoritative source register and an item-by-item evidence map covering all 12 anaphylaxis documentation checks.
