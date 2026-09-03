@@ -32,6 +32,10 @@ Open the live demo once while connected and wait for **“已准备离线使用�
 
 Offline readiness does not imply clinical validation. Test the installed app on the intended device and keep local emergency procedures available.
 
+## Pilot feedback
+
+The privacy-safe pilot process is ready, but no external responses have been counted yet. Review the [pilot guide](docs/PILOT_FEEDBACK_GUIDE.md), submit only blank or fictional-scenario feedback through the [public feedback form](https://github.com/cjjaijia-svg/primarycare-record-check/issues/new?template=pilot-feedback.yml), and follow aggregate progress in [PILOT_FINDINGS.md](docs/PILOT_FINDINGS.md).
+
 ## Clinical references and review
 
 All 12 checklist items are mapped to authoritative guidance in [REFERENCES.md](REFERENCES.md). Sources include NICE NG258 (published May 2026), World Allergy Organization guidance, the AAAAI/ACAAI anaphylaxis practice parameter, and Resuscitation Council UK guidance.

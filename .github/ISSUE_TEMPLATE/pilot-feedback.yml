@@ -1,0 +1,86 @@
+name: Pilot usability feedback
+description: Share structured feedback without patient or institution-identifying information.
+title: "[Pilot feedback] "
+labels:
+  - pilot-feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing PrimaryCare Record Check. This is a public GitHub issue.
+
+        **Do not include any real patient information, case narrative, dates, locations, record excerpts, screenshots of records, employer name, or colleague names.** Use only a fictional or blank test scenario.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I used only a fictional or blank scenario and included no patient, case, institution, or colleague-identifying information.
+          required: true
+        - label: I understand this feedback is public and is usability feedback, not independent clinical validation.
+          required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Broad role
+      description: Choose the closest broad category; do not name your employer.
+      options:
+        - Primary-care clinician
+        - Nurse
+        - Medical-record or quality staff
+        - Other healthcare professional
+        - Non-clinical usability tester
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Android phone
+        - iPhone or iPad
+        - Windows computer
+        - Mac computer
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: task
+    attributes:
+      label: Test outcome
+      description: Did you open the checklist, change items, add a fictional note, and copy or clear the summary?
+      options:
+        - Completed all test actions
+        - Completed some actions
+        - Could not complete the test
+    validations:
+      required: true
+  - type: dropdown
+    id: offline
+    attributes:
+      label: Offline check
+      description: After the page showed offline readiness, did it reopen without a network connection?
+      options:
+        - Worked offline
+        - Did not work offline
+        - Not tested
+    validations:
+      required: true
+  - type: textarea
+    id: unclear
+    attributes:
+      label: Unclear wording or interaction
+      description: Describe interface wording or behavior only. Do not describe a real patient or case.
+      placeholder: Example: The offline-ready message was difficult to notice.
+  - type: textarea
+    id: missing
+    attributes:
+      label: Missing usability feature
+      description: Suggest a workflow or interface improvement without patient or case details.
+      placeholder: Example: A printable blank checklist would help.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Technical problem
+      description: Include browser/device type and steps to reproduce. Do not attach clinical screenshots or records.
+      placeholder: Example: On Android Chrome, after selecting Add to Home Screen...
