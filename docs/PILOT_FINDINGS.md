@@ -26,6 +26,8 @@ No participant, institution, patient, or case-identifying information is recorde
 
 The mobile back-to-top suggestion is tracked in [Issue #11](https://github.com/cjjaijia-svg/primarycare-record-check/issues/11).
 
+On 2026-09-03, the original anonymous Android tester (`R03`) retested the deployed change and reported **passed**. The verification is recorded in Issue #11, completing the feedback-to-retest loop.
+
 The partially completed response did not identify the unfinished action or report a usability problem. It is therefore retained as a partial result and is not interpreted as evidence that every action works.
 
 ## Limitations
